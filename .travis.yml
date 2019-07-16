@@ -1,0 +1,11 @@
+language: java
+
+jdk:
+  - openjdk13
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - java --enable-preview -jar target/mybatis-demo-with-jdk13-0.0.1-SNAPSHOT.jar
